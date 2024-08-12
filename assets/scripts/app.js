@@ -1,9 +1,11 @@
 import * as util from "./util";
 import anotherAPIKey from "./util";
 import {userMessage} from "./var-values";
-import {add, greet, withParams, createGreeting} from "./function"
+import {add, createGreeting, greet, withParams} from "./function"
 import {uniqueArray} from './arrow-function';
 import {user, User} from './object-classes';
+import {currency} from './arrays-map';
+import {oldArr} from "./oldArr";
 
 console.log(anotherAPIKey);
 console.log(util.apiKey);
@@ -43,3 +45,14 @@ console.log(user1);
 console.log(user2);
 user1.greet();
 user2.greet();
+
+// Arrays && Arrays Methods like map()
+console.log('-----------------Arrays && Arrays Methods like map()----------------');
+console.log(currency)
+console.log(currency.push('CHF'))
+console.log(currency)
+console.log(currency.findIndex((item) => item === "CHF" ));
+console.log("Old array: ", oldArr);
+console.log(oldArr);
+const newArr = currency.map((item) => ({currency: item}));
+console.log("New Array: ", newArr);
