@@ -3,6 +3,7 @@ import anotherAPIKey from "./util";
 import {userMessage} from "./var-values";
 import {add, greet, withParams, createGreeting} from "./function"
 import {uniqueArray} from './arrow-function';
+import {user, User} from './object-classes';
 
 console.log(anotherAPIKey);
 console.log(util.apiKey);
@@ -32,3 +33,13 @@ console.log(uniqueArray(numbers))
 
 // Object && Classes
 console.log('-----------------Object && Classes----------------');
+console.log(user);
+console.log(user.userName);
+console.log(user.userAge);
+user.greet();
+const user1 = new User("John", "38");
+const user2 = new User("Nick", "42");
+console.log(user1);
+console.log(user2);
+user1.greet();
+user2.greet();
