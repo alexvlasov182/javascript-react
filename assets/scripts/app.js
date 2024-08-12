@@ -7,6 +7,7 @@ import {user, User} from './object-classes';
 import {currency} from './arrays-map';
 import {oldArr} from "./oldArr";
 import {firstName, lastName, name, age} from "./destructuring";
+import {stocks, extendUser} from './spread-operator';
 
 console.log(anotherAPIKey);
 console.log(util.apiKey);
@@ -63,3 +64,8 @@ console.log('-----------------Destructuring----------------');
 console.log(firstName, lastName)
 console.log(name)
 console.log(age)
+
+// The Spread Operator
+console.log('-----------------Spread Operator----------------');
+console.log(stocks)
+console.log(extendUser)
