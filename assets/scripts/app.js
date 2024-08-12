@@ -6,6 +6,7 @@ import {uniqueArray} from './arrow-function';
 import {user, User} from './object-classes';
 import {currency} from './arrays-map';
 import {oldArr} from "./oldArr";
+import {firstName, lastName, name, age} from "./destructuring";
 
 console.log(anotherAPIKey);
 console.log(util.apiKey);
@@ -56,3 +57,9 @@ console.log("Old array: ", oldArr);
 console.log(oldArr);
 const newArr = currency.map((item) => ({currency: item}));
 console.log("New Array: ", newArr);
+
+// Destructuring
+console.log('-----------------Destructuring----------------');
+console.log(firstName, lastName)
+console.log(name)
+console.log(age)
